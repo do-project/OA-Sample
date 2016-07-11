@@ -1,0 +1,30 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "140",
+        "height": "50",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "icon",
+                "x": "25",
+                "y": "10",
+                "width": "30",
+                "height": "30",
+                "type": "do_ImageView",
+                "cacheType": "always",
+                "defaultImage": "source://image/apps@default.png",
+                "scale": "fillxory"
+            },
+            {
+                "id": "name",
+                "x": "65",
+                "y": "5",
+                "width": "60",
+                "height": "40",
+                "type": "do_Label",
+                "fontSize": "24"
+            }
+        ]
+    }
+}

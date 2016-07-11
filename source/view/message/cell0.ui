@@ -1,0 +1,65 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "100",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "UserLogo",
+                "x": "15",
+                "y": "15",
+                "width": "70",
+                "height": "70",
+                "type": "do_ImageView",
+                "cacheType": "temporary",
+                "defaultImage": "source://image/user@avatar.png",
+                "scale": "fillxory"
+            },
+            {
+                "id": "NickName",
+                "x": "100",
+                "y": "15",
+                "width": "165",
+                "height": "30",
+                "type": "do_Label",
+                "fontSize": "24"
+            },
+            {
+                "id": "Time",
+                "x": "265",
+                "y": "15",
+                "width": "205",
+                "height": "30",
+                "type": "do_Label",
+                "fontColor": "666666FF",
+                "fontSize": "20",
+                "textAlign": "right"
+            },
+            {
+                "id": "LastMsg",
+                "x": "100",
+                "y": "55",
+                "width": "365",
+                "height": "30",
+                "type": "do_Label",
+                "fontColor": "B0B0B0FF",
+                "fontSize": "20"
+            },
+            {
+                "id": "Status",
+                "x": "70",
+                "y": "10",
+                "width": "24",
+                "height": "24",
+                "visible": "false",
+                "bgColor": "E03E3FFF",
+                "type": "do_Button",
+                "fontColor": "FFFFFFFF",
+                "fontSize": "16",
+                "radius": "12",
+                "text": "0"
+            }
+        ]
+    }
+}

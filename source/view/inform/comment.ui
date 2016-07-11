@@ -1,0 +1,99 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "评论信息",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "do_listview",
+                "y": "70",
+                "width": "480",
+                "height": "704",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ListView",
+                "footerView": "source://view/kit/fbar.ui",
+                "headerView": "source://view/kit/hbar.ui",
+                "isFooterVisible": "true",
+                "isHeaderVisible": "true",
+                "templates": "source://view/inform/comment_cell.ui"
+            },
+            {
+                "id": "do_alayout_3",
+                "y": "774",
+                "width": "480",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "tf_comment",
+                        "x": "15",
+                        "y": "15",
+                        "width": "365",
+                        "height": "50",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_TextField",
+                        "fontSize": "24",
+                        "hint": "请输入评论内容"
+                    },
+                    {
+                        "id": "action_ok",
+                        "x": "390",
+                        "y": "15",
+                        "width": "75",
+                        "height": "50",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_Button",
+                        "fontSize": "24",
+                        "text": "发送"
+                    },
+                    {
+                        "id": "line_1",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    }
+                ]
+            }
+        ]
+    }
+}

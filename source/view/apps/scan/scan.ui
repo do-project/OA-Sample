@@ -1,0 +1,68 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "000000FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "扫一扫",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "barc_scan",
+                "x": "80",
+                "y": "240",
+                "width": "320",
+                "height": "320",
+                "type": "do_BarcodeView"
+            },
+            {
+                "id": "action_start",
+                "x": "100",
+                "y": "580",
+                "width": "280",
+                "height": "60",
+                "type": "do_Button",
+                "fontColor": "FFFFFFFF",
+                "fontSize": "24",
+                "text": "扫描二维码"
+            }
+        ]
+    }
+}

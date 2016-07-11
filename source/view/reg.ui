@@ -1,0 +1,479 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "注册",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "do_linearlayout_1",
+                "y": "70",
+                "width": "480",
+                "height": "784",
+                "type": "do_LinearLayout",
+                "views": [
+                    {
+                        "id": "do_line_1",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "margin": "30,0,0,0",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_itcode",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "lable_itcode",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "ID"
+                            },
+                            {
+                                "id": "tf_itcode",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的ID",
+                                "inputType": "ASC"
+                            },
+                            {
+                                "id": "star_itcode",
+                                "x": "100",
+                                "y": "10",
+                                "width": "30",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "E03E3FFF",
+                                "fontSize": "24",
+                                "text": "*",
+                                "textAlign": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_2",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_pwd",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_pwd",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "密码"
+                            },
+                            {
+                                "id": "tf_pwd",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的密码",
+                                "inputType": "ASC"
+                            },
+                            {
+                                "id": "star_pwd",
+                                "x": "100",
+                                "y": "10",
+                                "width": "30",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "E03E3FFF",
+                                "fontSize": "24",
+                                "text": "*",
+                                "textAlign": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_3",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_name",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_name",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "姓名"
+                            },
+                            {
+                                "id": "tf_name",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的姓名",
+                                "inputType": "ASC"
+                            },
+                            {
+                                "id": "star_name",
+                                "x": "100",
+                                "y": "10",
+                                "width": "30",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "E03E3FFF",
+                                "fontSize": "24",
+                                "text": "*",
+                                "textAlign": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_4",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_email",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_email",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "邮箱"
+                            },
+                            {
+                                "id": "tf_email",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的邮箱",
+                                "inputType": "ASC"
+                            },
+                            {
+                                "id": "star_email",
+                                "x": "100",
+                                "y": "10",
+                                "width": "30",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "E03E3FFF",
+                                "fontSize": "24",
+                                "text": "*",
+                                "textAlign": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_5",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_phone",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_phone",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "手机号码"
+                            },
+                            {
+                                "id": "tf_phone",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的手机号码",
+                                "inputType": "PHONENUMBER"
+                            },
+                            {
+                                "id": "star_phone",
+                                "x": "100",
+                                "y": "10",
+                                "width": "30",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "E03E3FFF",
+                                "fontSize": "24",
+                                "text": "*",
+                                "textAlign": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_6",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_fix",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_fix",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "座机号码"
+                            },
+                            {
+                                "id": "tf_fix",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的座机号码",
+                                "inputType": "PHONENUMBER"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_7",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_employer",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_employer",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "员工编号"
+                            },
+                            {
+                                "id": "tf_employer",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的员工编号",
+                                "inputType": "ASC"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_8",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_position",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_position",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "职位"
+                            },
+                            {
+                                "id": "tf_position",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的职位名称",
+                                "inputType": "ASC"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_9",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_department",
+                        "width": "480",
+                        "height": "70",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_department",
+                                "x": "30",
+                                "y": "10",
+                                "width": "110",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "24",
+                                "text": "部门"
+                            },
+                            {
+                                "id": "tf_departement",
+                                "x": "140",
+                                "y": "10",
+                                "width": "330",
+                                "height": "50",
+                                "type": "do_TextField",
+                                "fontSize": "24",
+                                "hint": "请输入您的部门名称",
+                                "inputType": "ASC"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_10",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "alayout_ok",
+                        "width": "480",
+                        "height": "120",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "action_ok",
+                                "x": "50",
+                                "y": "30",
+                                "width": "380",
+                                "height": "60",
+                                "bgColor": "E03E3FFF",
+                                "type": "do_Button",
+                                "fontColor": "FFFFFFFF",
+                                "fontSize": "24",
+                                "text": "确认"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

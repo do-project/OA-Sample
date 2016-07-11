@@ -1,0 +1,361 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "textAlign": "center"
+                    },
+                    {
+                        "id": "action_att",
+                        "x": "380",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_att",
+                                "y": "10",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "FFFFFFFF",
+                                "fontSize": "22",
+                                "textAlign": "center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "scroll_detail",
+                "y": "70",
+                "width": "480",
+                "height": "714",
+                "type": "do_ScrollView",
+                "views": [
+                    {
+                        "id": "do_linearlayout_1",
+                        "width": "480",
+                        "height": "-1",
+                        "type": "do_LinearLayout",
+                        "views": [
+                            {
+                                "id": "do_alayout_3",
+                                "width": "480",
+                                "height": "160",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "icon",
+                                        "x": "20",
+                                        "y": "20",
+                                        "width": "120",
+                                        "height": "120",
+                                        "type": "do_ImageView",
+                                        "cacheType": "temporary",
+                                        "defaultImage": "source://image/user@avatar.png",
+                                        "scale": "fillxory"
+                                    },
+                                    {
+                                        "id": "nameAndItcode",
+                                        "x": "160",
+                                        "y": "20",
+                                        "width": "300",
+                                        "height": "60",
+                                        "type": "do_Label",
+                                        "fontSize": "28"
+                                    },
+                                    {
+                                        "id": "number",
+                                        "x": "160",
+                                        "y": "80",
+                                        "width": "300",
+                                        "height": "60",
+                                        "type": "do_Label",
+                                        "fontSize": "24"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_1",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "do_line_2",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "30,0,0,0",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "do_linearlayout_2",
+                                "width": "480",
+                                "height": "-1",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_LinearLayout",
+                                "views": [
+                                    {
+                                        "id": "do_alayout_4",
+                                        "width": "480",
+                                        "height": "70",
+                                        "type": "do_ALayout",
+                                        "views": [
+                                            {
+                                                "id": "do_label_4",
+                                                "x": "30",
+                                                "y": "10",
+                                                "width": "80",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24",
+                                                "text": "工号"
+                                            },
+                                            {
+                                                "id": "employerId",
+                                                "x": "110",
+                                                "y": "10",
+                                                "width": "360",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "do_line_3",
+                                        "x": "30",
+                                        "width": "480",
+                                        "height": "1",
+                                        "bgColor": "DBDBDBFF",
+                                        "margin": "0,0,0,30",
+                                        "type": "do_Label"
+                                    },
+                                    {
+                                        "id": "do_alayout_5",
+                                        "width": "480",
+                                        "height": "70",
+                                        "type": "do_ALayout",
+                                        "views": [
+                                            {
+                                                "id": "do_label_5",
+                                                "x": "30",
+                                                "y": "10",
+                                                "width": "80",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24",
+                                                "text": "邮箱"
+                                            },
+                                            {
+                                                "id": "email",
+                                                "x": "110",
+                                                "y": "10",
+                                                "width": "360",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "do_line_4",
+                                        "x": "30",
+                                        "width": "480",
+                                        "height": "1",
+                                        "bgColor": "DBDBDBFF",
+                                        "margin": "0,0,0,30",
+                                        "type": "do_Label"
+                                    },
+                                    {
+                                        "id": "do_alayout_6",
+                                        "width": "480",
+                                        "height": "70",
+                                        "type": "do_ALayout",
+                                        "views": [
+                                            {
+                                                "id": "do_label_6",
+                                                "x": "30",
+                                                "y": "10",
+                                                "width": "80",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24",
+                                                "text": "座机"
+                                            },
+                                            {
+                                                "id": "telephone",
+                                                "x": "110",
+                                                "y": "10",
+                                                "width": "360",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "do_line_5",
+                                        "x": "30",
+                                        "width": "480",
+                                        "height": "1",
+                                        "bgColor": "DBDBDBFF",
+                                        "margin": "0,0,0,30",
+                                        "type": "do_Label"
+                                    },
+                                    {
+                                        "id": "do_alayout_7",
+                                        "width": "480",
+                                        "height": "70",
+                                        "type": "do_ALayout",
+                                        "views": [
+                                            {
+                                                "id": "do_label_7",
+                                                "x": "30",
+                                                "y": "10",
+                                                "width": "80",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24",
+                                                "text": "职位"
+                                            },
+                                            {
+                                                "id": "dcPosition",
+                                                "x": "110",
+                                                "y": "10",
+                                                "width": "360",
+                                                "height": "50",
+                                                "type": "do_Label",
+                                                "fontSize": "24"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "do_line_6",
+                                        "width": "480",
+                                        "height": "1",
+                                        "bgColor": "DBDBDBFF",
+                                        "margin": "0,0,20,30",
+                                        "type": "do_Label"
+                                    },
+                                    {
+                                        "id": "do_linearlayout_3",
+                                        "width": "480",
+                                        "height": "-1",
+                                        "margin": "0,0,20,0",
+                                        "type": "do_LinearLayout",
+                                        "direction": "horizontal",
+                                        "views": [
+                                            {
+                                                "id": "do_label_8",
+                                                "width": "80",
+                                                "height": "-1",
+                                                "margin": "0,0,0,30",
+                                                "type": "do_Label",
+                                                "fontSize": "24",
+                                                "text": "部门"
+                                            },
+                                            {
+                                                "id": "departname",
+                                                "width": "360",
+                                                "height": "-1",
+                                                "type": "do_Label",
+                                                "fontSize": "24"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_7",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "type": "do_Label"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "do_alayout_9",
+                "y": "784",
+                "width": "480",
+                "height": "70",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_call",
+                        "x": "30",
+                        "y": "10",
+                        "width": "200",
+                        "height": "50",
+                        "bgColor": "E03E3FFF",
+                        "type": "do_Button",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "24",
+                        "text": "拨打电话"
+                    },
+                    {
+                        "id": "action_msg",
+                        "x": "250",
+                        "y": "10",
+                        "width": "200",
+                        "height": "50",
+                        "bgColor": "E03E3FFF",
+                        "type": "do_Button",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "24",
+                        "text": "即时通信"
+                    },
+                    {
+                        "id": "do_line_8",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    }
+                ]
+            }
+        ]
+    }
+}

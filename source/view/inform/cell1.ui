@@ -1,0 +1,41 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "120",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "type",
+                "x": "15",
+                "y": "15",
+                "width": "30",
+                "height": "30",
+                "type": "do_ImageView",
+                "cacheType": "always"
+            },
+            {
+                "id": "title",
+                "x": "60",
+                "y": "10",
+                "width": "410",
+                "height": "40",
+                "type": "do_Label",
+                "fontColor": "121212FF",
+                "fontSize": "24",
+                "maxLines": "1"
+            },
+            {
+                "id": "describe",
+                "x": "15",
+                "y": "50",
+                "width": "455",
+                "height": "60",
+                "type": "do_Label",
+                "fontColor": "9B9B9BFF",
+                "fontSize": "22",
+                "maxLines": "2"
+            }
+        ]
+    }
+}

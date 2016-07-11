@@ -1,0 +1,105 @@
+﻿{
+  "ID": "do_iFlyVoice",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "讯飞语音",
+  "Version": "Internal",
+  "Description": "集成讯飞提供的语音识别类",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/f492056e-ef9e-4938-95e6-c4e5837f901f.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "begin",
+      "Description": "开始播放时触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "finished",
+      "Description": "播放完成或播放错误时触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "pause",
+      "Name": "暂停播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "resume",
+      "Name": "继续播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "speak",
+      "Name": "开始播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "text",
+          "Name": "文本内容",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "要读出的文本内容"
+        },
+        {
+          "ID": "role",
+          "Name": "角色",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "xiaoyan",
+          "Description": "需要朗读的角色,值列表见http://bbs.deviceone.net/forum.php?mod=viewthread&tid=32&extra="
+        }
+      ]
+    },
+    {
+      "ID": "stop",
+      "Name": "停止播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": [
+    {
+      "ID": "open",
+      "Name": "打开语音识别功能",
+      "Description": "",
+      "ReturnType": "Node",
+      "ReturnDesc": "{\\\"result\\\":\\\"你好\\\",\\\"spell\\\":\\\"nihao\\\",\\\"errorMsg\\\":\\\"\\\"}",
+      "Paras": []
+    }
+  ]
+}

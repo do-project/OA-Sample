@@ -1,0 +1,157 @@
+﻿{
+  "ID": "do_SinaWeiBo",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "使用sina微博登录第三方应用",
+  "Version": "Internal",
+  "Description": "提供sina微博用户登录和分享相关功能",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_SinaWeiBo/微博.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [],
+  "asyncMethodes": [
+    {
+      "ID": "getUserInfo",
+      "Name": "获取用户信息",
+      "Description": "获取用户信息",
+      "ReturnType": "String",
+      "ReturnDesc": "返回是一个String,里面包含了用户的基本信息，头像，昵称...",
+      "Paras": [
+        {
+          "ID": "uid",
+          "Name": "uid",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "accessToken",
+          "Name": "access_token",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "refreshToken",
+          "Name": "refresh_token",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "expires",
+          "Name": "expires_in",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "login",
+      "Name": "使用sina微博登录",
+      "Description": "使用sina微博登录获取用户登录的信息",
+      "ReturnType": "String",
+      "ReturnDesc": "返回用户登录信息{'uid': '2806220780', 'access_token': '2.00UNcuDDswn6rCccbb272dc4SsU7dC', 'refresh_token': '2.00UNcuDDswn6rCa14e51baccu2BzTD','expires_in': '1429210895335'}",
+      "Paras": [
+        {
+          "ID": "appId",
+          "Name": "appId",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "在微博开发平台上申请的appId"
+        }
+      ]
+    },
+    {
+      "ID": "logout",
+      "Name": "注销",
+      "Description": "注销登录",
+      "ReturnType": "Bool",
+      "ReturnDesc": "true 注销成功，false 注销失败",
+      "Paras": []
+    },
+    {
+      "ID": "share",
+      "Name": "分享到新浪微博",
+      "Description": "分享到新浪微博",
+      "ReturnType": "Bool",
+      "ReturnDesc": "true 分享成功，false 分享失败",
+      "Paras": [
+        {
+          "ID": "appId",
+          "Name": "appId",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "在微博开发平台上申请的appId"
+        },
+        {
+          "ID": "type",
+          "Name": "分享的类型",
+          "Type": "Number",
+          "Required": 1,
+          "DefaultValue": "0",
+          "Description": "0：默认，图文分享；1：网页分享；2：音乐分享；3：视频分享；4：音频分享；"
+        },
+        {
+          "ID": "title",
+          "Name": "标题",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "分享的标题, 最长30个字符"
+        },
+        {
+          "ID": "image",
+          "Name": "图片地址",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "分享后显示的图片，只支持本地图片data://"
+        },
+        {
+          "ID": "url",
+          "Name": "文件的远程链接",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "文件的远程链接, 以URL的形式传入"
+        },
+        {
+          "ID": "summary",
+          "Name": "摘要",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "分享的消息摘要，最长40个字符"
+        }
+      ]
+    }
+  ]
+}

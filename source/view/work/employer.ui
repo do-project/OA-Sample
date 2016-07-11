@@ -1,0 +1,59 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "do_listview",
+                "y": "70",
+                "width": "480",
+                "height": "784",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ListView",
+                "headerView": "source://view/kit/hbar.ui",
+                "isHeaderVisible": "true",
+                "templates": "source://view/work/cell0.ui,source://view/work/cell1.ui,source://view/work/cell2.ui,source://view/work/cell3.ui,source://view/work/cell4.ui"
+            }
+        ]
+    }
+}

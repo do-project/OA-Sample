@@ -1,0 +1,82 @@
+{
+    "RootView": {
+        "id": "do_linearlayout_1",
+        "width": "480",
+        "height": "-1",
+        "type": "do_LinearLayout",
+        "direction": "horizontal",
+        "views": [
+            {
+                "id": "do_alayout_1",
+                "width": "70",
+                "height": "70",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "icon",
+                        "x": "15",
+                        "y": "15",
+                        "width": "40",
+                        "height": "40",
+                        "type": "do_ImageView",
+                        "defaultImage": "source://image/user@avatar.png",
+                        "scale": "fillxory"
+                    }
+                ]
+            },
+            {
+                "id": "do_linearlayout_2",
+                "width": "410",
+                "height": "-1",
+                "type": "do_LinearLayout",
+                "views": [
+                    {
+                        "id": "do_label_1",
+                        "width": "410",
+                        "height": "10",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_alayout_2",
+                        "width": "410",
+                        "height": "40",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "name",
+                                "width": "180",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "24"
+                            },
+                            {
+                                "id": "createTime",
+                                "x": "180",
+                                "y": "5",
+                                "width": "220",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontColor": "999999FF",
+                                "fontSize": "20",
+                                "textAlign": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "message",
+                        "width": "400",
+                        "height": "-1",
+                        "type": "do_Label",
+                        "fontSize": "24"
+                    },
+                    {
+                        "id": "do_label_2",
+                        "width": "410",
+                        "height": "15",
+                        "type": "do_Label"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "96",
+        "height": "96",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "icon",
+                "x": "3",
+                "y": "3",
+                "width": "90",
+                "height": "90",
+                "type": "do_ImageView",
+                "cacheType": "always",
+                "scale": "fillxory",
+                "source": "source://image/apps@add.png"
+            }
+        ]
+    }
+}

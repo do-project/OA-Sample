@@ -1,0 +1,528 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "通讯录",
+                        "textAlign": "center"
+                    },
+                    {
+                        "id": "action_sync",
+                        "x": "400",
+                        "width": "80",
+                        "height": "70",
+                        "visible": "false",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "20",
+                                "y": "15",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/contact@refresh.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "do_listview",
+                "y": "69",
+                "width": "480",
+                "height": "630",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ListView",
+                "footerView": "source://view/kit/fbar.ui",
+                "headerView": "source://view/kit/hbar.ui",
+                "isFooterVisible": "true",
+                "isHeaderVisible": "true",
+                "templates": "source://view/contact/cell0.ui"
+            },
+            {
+                "id": "do_alayout_3",
+                "y": "700",
+                "width": "480",
+                "height": "70",
+                "bgColor": "F7F7F7FF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "do_line_8",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "lb_text_1",
+                        "x": "10",
+                        "y": "10",
+                        "width": "320",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "666666FF",
+                        "fontSize": "24",
+                        "text": "索引键盘→",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "keyboard",
+                "y": "420",
+                "width": "480",
+                "height": "350",
+                "visible": "false",
+                "bgColor": "F7F7F7FF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "lb_text_0",
+                        "x": "10",
+                        "y": "10",
+                        "width": "400",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "999999FF",
+                        "fontSize": "20",
+                        "text": "搜索ID、员工编号和姓名的拼音码",
+                        "textAlign": "center"
+                    },
+                    {
+                        "id": "action_del",
+                        "x": "410",
+                        "width": "70",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "img_del",
+                                "x": "8",
+                                "y": "19",
+                                "width": "48",
+                                "height": "32",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/contact@search.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_1",
+                        "y": "70",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_1",
+                                "x": "10",
+                                "y": "10",
+                                "width": "140",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "1",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_2",
+                        "x": "160",
+                        "y": "70",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_2",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "2",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "abc",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "ABC",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_3",
+                        "x": "320",
+                        "y": "70",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_3",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "3",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "def",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "DEF",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_4",
+                        "y": "140",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_4",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "4",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "ghi",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "GHI",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_5",
+                        "x": "160",
+                        "y": "140",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_5",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "5",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "jkl",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "JKL",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_6",
+                        "x": "320",
+                        "y": "140",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_6",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "6",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "mno",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "MNO",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_7",
+                        "y": "210",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_7",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "7",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "pqrs",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "PQRS",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_8",
+                        "x": "160",
+                        "y": "210",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_8",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "8",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "tuv",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "TUV",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_9",
+                        "x": "320",
+                        "y": "210",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_9",
+                                "x": "10",
+                                "y": "6",
+                                "width": "140",
+                                "height": "40",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "9",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "wxyz",
+                                "x": "20",
+                                "y": "36",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "18",
+                                "text": "WXYZ",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_n",
+                        "y": "280",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_n",
+                                "x": "10",
+                                "y": "10",
+                                "width": "140",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "28",
+                                "text": "—",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_0",
+                        "x": "160",
+                        "y": "280",
+                        "width": "160",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "label_0",
+                                "x": "10",
+                                "y": "10",
+                                "width": "140",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontSize": "30",
+                                "text": "0",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_1",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_2",
+                        "y": "70",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_3",
+                        "y": "140",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_4",
+                        "y": "210",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_5",
+                        "y": "280",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_6",
+                        "x": "160",
+                        "y": "70",
+                        "width": "1",
+                        "height": "280",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_7",
+                        "x": "320",
+                        "y": "70",
+                        "width": "1",
+                        "height": "280",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    }
+                ]
+            },
+            {
+                "id": "action_switch",
+                "x": "330",
+                "y": "710",
+                "width": "140",
+                "height": "50",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "img_switch",
+                        "x": "50",
+                        "y": "5",
+                        "width": "40",
+                        "height": "40",
+                        "type": "do_ImageView",
+                        "cacheType": "always",
+                        "source": "source://image/contact@switch_down.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

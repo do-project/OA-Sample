@@ -1,0 +1,21 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_listview",
+                "width": "480",
+                "height": "650",
+                "type": "do_ListView",
+                "footerView": "source://view/kit/fbar.ui",
+                "headerView": "source://view/kit/hbar.ui",
+                "isFooterVisible": "true",
+                "isHeaderVisible": "true",
+                "templates": "source://view/inform/cell0.ui,source://view/inform/cell1.ui,source://view/inform/cell2.ui"
+            }
+        ]
+    }
+}

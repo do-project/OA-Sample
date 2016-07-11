@@ -1,0 +1,162 @@
+﻿{
+  "ID": "do_CheckBox",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "复选框",
+  "Version": "Internal",
+  "Description": "",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_CheckBox/复选框.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "checked",
+      "Name": "是否选中",
+      "Type": "Bool",
+      "DefaultValue": "false",
+      "EditType": "1",
+      "Group": "",
+      "Description": "为true时为选中状态，false为未选中状态",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "enabled",
+      "Name": "是否可点击",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "1",
+      "Group": "",
+      "Description": "缺省为true控制组件可点击，当为false时不支持点击",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontColor",
+      "Name": "字体颜色",
+      "Type": "String",
+      "DefaultValue": "000000FF",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontSize",
+      "Name": "字体大小",
+      "Type": "Number",
+      "DefaultValue": "17",
+      "EditType": "1",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontStyle",
+      "Name": "字体风格",
+      "Type": "String",
+      "DefaultValue": "normal",
+      "EditType": "1",
+      "Group": "",
+      "Description": "包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "normal",
+            "value": "常规"
+          },
+          {
+            "id": "bold",
+            "value": "粗体"
+          },
+          {
+            "id": "italic",
+            "value": "斜体"
+          },
+          {
+            "id": "bold_italic",
+            "value": "粗斜体"
+          }
+        ]
+      }
+    },
+    {
+      "ID": "text",
+      "Name": "文本显示内容",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "获取或设置与此控件关联的文本。",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "textFlag",
+      "Name": "字体标示",
+      "Type": "String",
+      "DefaultValue": "normal",
+      "EditType": "0",
+      "Group": "",
+      "Description": "包含3种类型：\r\nnormal：常规\r\nunderline ：下划线\r\nstrikethrough ：删除线",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "normal",
+            "value": "常规"
+          },
+          {
+            "id": "underline",
+            "value": "下划线"
+          },
+          {
+            "id": "strikethrough",
+            "value": "删除线"
+          }
+        ]
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "checkChanged",
+      "Description": "选择切换时触发",
+      "ReturnType": "Bool",
+      "ReturnDesc": "返回当前控件状态"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

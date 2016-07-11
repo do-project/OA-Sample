@@ -1,0 +1,89 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "do_button_1",
+                        "x": "120",
+                        "y": "10",
+                        "width": "240",
+                        "height": "50",
+                        "bgColor": "FFFFFFFF",
+                        "type": "do_Button"
+                    },
+                    {
+                        "id": "do_button_2",
+                        "x": "121",
+                        "y": "11",
+                        "width": "238",
+                        "height": "48",
+                        "bgColor": "E03E3FFF",
+                        "type": "do_Button"
+                    },
+                    {
+                        "id": "action_all",
+                        "x": "120",
+                        "y": "10",
+                        "width": "120",
+                        "height": "50",
+                        "bgColor": "FFFFFFFF",
+                        "tag": "all",
+                        "type": "do_Button",
+                        "fontColor": "E03E3FFF",
+                        "fontSize": "24",
+                        "text": "全部内容"
+                    },
+                    {
+                        "id": "action_att",
+                        "x": "240",
+                        "y": "10",
+                        "width": "120",
+                        "height": "50",
+                        "tag": "att",
+                        "type": "do_Button",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "24",
+                        "text": "我的关注"
+                    },
+                    {
+                        "id": "action_add",
+                        "x": "400",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_2",
+                                "x": "20",
+                                "y": "15",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/work@add.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "work_shower",
+                "y": "70",
+                "width": "480",
+                "height": "700",
+                "type": "do_ViewShower"
+            }
+        ]
+    }
+}

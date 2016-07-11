@@ -1,0 +1,96 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_exit",
+                        "x": "80",
+                        "width": "60",
+                        "height": "70",
+                        "visible": "false",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_label_1",
+                                "y": "10",
+                                "width": "60",
+                                "height": "50",
+                                "type": "do_Label",
+                                "fontColor": "FFFFFFFF",
+                                "fontSize": "24",
+                                "text": "关闭"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "140",
+                        "y": "10",
+                        "width": "200",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "maxLines": "1",
+                        "textAlign": "center"
+                    },
+                    {
+                        "id": "action_comment",
+                        "x": "400",
+                        "width": "80",
+                        "height": "70",
+                        "visible": "false",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_2",
+                                "x": "20",
+                                "y": "18",
+                                "width": "40",
+                                "height": "36",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/inform@comment.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "wv_detail",
+                "y": "70",
+                "width": "480",
+                "height": "784",
+                "type": "do_WebView"
+            }
+        ]
+    }
+}

@@ -1,0 +1,203 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "visible": "false",
+        "bgColor": "00000088",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "y": "614",
+                "width": "480",
+                "height": "240",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_qq",
+                        "width": "160",
+                        "height": "120",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "45",
+                                "y": "10",
+                                "width": "70",
+                                "height": "70",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/share_qq.png"
+                            },
+                            {
+                                "id": "do_label_1",
+                                "x": "20",
+                                "y": "85",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "20",
+                                "text": "QQ好友",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_qzone",
+                        "x": "160",
+                        "width": "160",
+                        "height": "120",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_2",
+                                "x": "45",
+                                "y": "10",
+                                "width": "70",
+                                "height": "70",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/share_qzone.png"
+                            },
+                            {
+                                "id": "do_label_2",
+                                "x": "20",
+                                "y": "85",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "20",
+                                "text": "QQ空间",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_wx",
+                        "x": "320",
+                        "width": "160",
+                        "height": "120",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_3",
+                                "x": "45",
+                                "y": "10",
+                                "width": "70",
+                                "height": "70",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/share_wx.png"
+                            },
+                            {
+                                "id": "do_label_3",
+                                "x": "20",
+                                "y": "85",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "20",
+                                "text": "微信好友",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_wb",
+                        "y": "120",
+                        "width": "160",
+                        "height": "120",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_4",
+                                "x": "45",
+                                "y": "10",
+                                "width": "70",
+                                "height": "70",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/share_wb.png"
+                            },
+                            {
+                                "id": "do_label_4",
+                                "x": "20",
+                                "y": "85",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "20",
+                                "text": "新浪微博",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_copy",
+                        "x": "160",
+                        "y": "120",
+                        "width": "160",
+                        "height": "120",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_5",
+                                "x": "45",
+                                "y": "10",
+                                "width": "70",
+                                "height": "70",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/share_copy.png"
+                            },
+                            {
+                                "id": "do_label_5",
+                                "x": "20",
+                                "y": "85",
+                                "width": "120",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "20",
+                                "text": "复制链接",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "do_line_1",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_2",
+                        "y": "120",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_3",
+                        "x": "160",
+                        "width": "1",
+                        "height": "240",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "do_line_4",
+                        "x": "320",
+                        "width": "1",
+                        "height": "240",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,191 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "main_shower",
+                "width": "480",
+                "height": "770",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ViewShower"
+            },
+            {
+                "id": "do_alayout_2",
+                "y": "770",
+                "width": "480",
+                "height": "84",
+                "bgColor": "F7F7F7FF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "do_line_1",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "inform",
+                        "x": "5",
+                        "y": "5",
+                        "width": "90",
+                        "height": "74",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "lb_0",
+                                "x": "5",
+                                "y": "45",
+                                "width": "80",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontColor": "E03E3FFF",
+                                "fontSize": "16",
+                                "text": "信息",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "img_0",
+                                "x": "25",
+                                "y": "5",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/action@inform_d.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "work",
+                        "x": "385",
+                        "y": "5",
+                        "width": "90",
+                        "height": "74",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "lb_1",
+                                "x": "5",
+                                "y": "45",
+                                "width": "80",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "16",
+                                "text": "工作圈",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "img_1",
+                                "x": "25",
+                                "y": "5",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/action@work.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "apps",
+                        "x": "195",
+                        "y": "5",
+                        "width": "90",
+                        "height": "74",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "lb_2",
+                                "x": "5",
+                                "y": "45",
+                                "width": "80",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "16",
+                                "text": "应用+",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "img_2",
+                                "x": "25",
+                                "y": "5",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/action@apps.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "contact",
+                        "x": "290",
+                        "y": "5",
+                        "width": "90",
+                        "height": "74",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "lb_3",
+                                "x": "5",
+                                "y": "45",
+                                "width": "80",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "16",
+                                "text": "通讯录",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "img_3",
+                                "x": "25",
+                                "y": "5",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/action@contact.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "message",
+                        "x": "100",
+                        "y": "5",
+                        "width": "90",
+                        "height": "74",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "lb_4",
+                                "x": "5",
+                                "y": "45",
+                                "width": "80",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontSize": "16",
+                                "text": "即时",
+                                "textAlign": "center"
+                            },
+                            {
+                                "id": "img_4",
+                                "x": "25",
+                                "y": "5",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/action@message.png"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,415 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "设置",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "do_scrollview_1",
+                "y": "70",
+                "width": "480",
+                "height": "784",
+                "type": "do_ScrollView",
+                "views": [
+                    {
+                        "id": "do_linearlayout_1",
+                        "width": "480",
+                        "height": "-1",
+                        "type": "do_LinearLayout",
+                        "views": [
+                            {
+                                "id": "action_info",
+                                "width": "480",
+                                "height": "180",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "user_avatar",
+                                        "x": "30",
+                                        "y": "30",
+                                        "width": "120",
+                                        "height": "120",
+                                        "type": "do_ImageView",
+                                        "cacheType": "temporary",
+                                        "defaultImage": "source://image/user@avatar.png",
+                                        "scale": "fillxory"
+                                    },
+                                    {
+                                        "id": "user_itcode",
+                                        "x": "170",
+                                        "y": "40",
+                                        "width": "240",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "28"
+                                    },
+                                    {
+                                        "id": "user_name",
+                                        "x": "170",
+                                        "y": "90",
+                                        "width": "240",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24"
+                                    },
+                                    {
+                                        "id": "do_arrow_1",
+                                        "x": "438",
+                                        "y": "78",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_1",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,30,0",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "do_line_2",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_edit",
+                                "width": "480",
+                                "height": "70",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_edit",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "修改密码"
+                                    },
+                                    {
+                                        "id": "do_arrow_2",
+                                        "x": "438",
+                                        "y": "23",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_3",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,0,30",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_mypay",
+                                "width": "480",
+                                "height": "70",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_mypay",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "我的关注"
+                                    },
+                                    {
+                                        "id": "do_arrow_3",
+                                        "x": "438",
+                                        "y": "23",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_4",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,0,30",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_feedback",
+                                "width": "480",
+                                "height": "70",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_feedback",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "意见反馈"
+                                    },
+                                    {
+                                        "id": "do_arrow_4",
+                                        "x": "438",
+                                        "y": "23",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_5",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,0,30",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_about",
+                                "width": "480",
+                                "height": "70",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_about",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "关于我们"
+                                    },
+                                    {
+                                        "id": "do_arrow_5",
+                                        "x": "438",
+                                        "y": "23",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_7",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,0,30",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_share",
+                                "width": "480",
+                                "height": "70",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_share",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "应用分享"
+                                    },
+                                    {
+                                        "id": "do_arrow_6",
+                                        "x": "438",
+                                        "y": "23",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_8",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,30,0",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "do_line_9",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_upgrade",
+                                "width": "480",
+                                "height": "70",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_upgrade",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "版本更新"
+                                    },
+                                    {
+                                        "id": "lb_version",
+                                        "x": "320",
+                                        "y": "10",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "20",
+                                        "textAlign": "right"
+                                    },
+                                    {
+                                        "id": "do_arrow_7",
+                                        "x": "438",
+                                        "y": "23",
+                                        "width": "12",
+                                        "height": "24",
+                                        "type": "do_ImageView",
+                                        "source": "source://image/arrow@right.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_10",
+                                "width": "480",
+                                "height": "1",
+                                "visible": "false",
+                                "bgColor": "DBDBDBFF",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "action_push",
+                                "width": "480",
+                                "height": "70",
+                                "visible": "false",
+                                "bgColor": "FFFFFFFF",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "label_push",
+                                        "x": "50",
+                                        "y": "10",
+                                        "width": "200",
+                                        "height": "50",
+                                        "type": "do_Label",
+                                        "fontSize": "24",
+                                        "text": "推送"
+                                    },
+                                    {
+                                        "id": "switch_push",
+                                        "x": "380",
+                                        "y": "15",
+                                        "width": "70",
+                                        "height": "40",
+                                        "type": "do_SwitchView"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "do_line_11",
+                                "width": "480",
+                                "height": "1",
+                                "bgColor": "DBDBDBFF",
+                                "margin": "0,0,30,0",
+                                "type": "do_Label"
+                            },
+                            {
+                                "id": "alayout_logoff",
+                                "width": "480",
+                                "height": "90",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "action_logoff",
+                                        "x": "50",
+                                        "width": "380",
+                                        "height": "60",
+                                        "bgColor": "E03E3FFF",
+                                        "type": "do_Button",
+                                        "fontColor": "FFFFFFFF",
+                                        "fontSize": "24",
+                                        "text": "退出登录"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

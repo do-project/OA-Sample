@@ -1,0 +1,96 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "发表",
+                        "textAlign": "center"
+                    },
+                    {
+                        "id": "action_ok",
+                        "x": "400",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_2",
+                                "x": "20",
+                                "y": "21",
+                                "width": "41",
+                                "height": "28",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/feedback@send.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "do_linearlayout_1",
+                "y": "70",
+                "width": "480",
+                "height": "784",
+                "bgColor": "FFFFFFFF",
+                "type": "do_LinearLayout",
+                "views": [
+                    {
+                        "id": "tb_message",
+                        "width": "460",
+                        "height": "300",
+                        "margin": "10,0,0,10",
+                        "type": "do_TextBox",
+                        "fontSize": "24",
+                        "hint": "这一刻的想法..."
+                    },
+                    {
+                        "id": "gv_imgs",
+                        "y": "300",
+                        "width": "480",
+                        "height": "-1",
+                        "type": "do_GridView",
+                        "numColumns": "5",
+                        "templates": "source://view/work/add_cell.ui"
+                    }
+                ]
+            }
+        ]
+    }
+}

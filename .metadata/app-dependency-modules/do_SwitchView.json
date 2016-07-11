@@ -1,0 +1,89 @@
+﻿{
+  "ID": "do_SwitchView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "开关",
+  "Version": "Internal",
+  "Description": "SwitchView 是一个带有开关选择的UI组件，只有（开，关）两种状态，点击或拽动改变状态，该组件的样式是跟随系统，各平台显示效果不完全一样 ，可以应用于是否记住密码场景和一些具有布尔类型的配置页面",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_SwitchView/开关.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "checked",
+      "Name": "是否选中",
+      "Type": "Bool",
+      "DefaultValue": "false",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置当前状态，默认为不选中状态",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "colors",
+      "Name": "组件状态颜色",
+      "Type": "String",
+      "DefaultValue": "00FF00,888888,FFFFFF",
+      "EditType": "0",
+      "Group": "",
+      "Description": "SwitchView 各种状态的颜色：open的背景颜色值，close的背景颜色值，slider的背景颜色值， 默认值为：“00FF00,888888,FFFFFF”",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    },
+    {
+      "ID": "shape",
+      "Name": "组件形状",
+      "Type": "String",
+      "DefaultValue": "circle",
+      "EditType": "0",
+      "Group": "",
+      "Description": "设置组件形状，有两种形状，rect矩形，circle圆形",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "rect",
+            "value": "矩形"
+          },
+          {
+            "id": "circle",
+            "value": "圆形"
+          }
+        ]
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "changed",
+      "Description": "开关状态触发",
+      "ReturnType": "Bool",
+      "ReturnDesc": "当前状态"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

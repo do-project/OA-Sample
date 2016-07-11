@@ -1,0 +1,191 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "action_back",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "30",
+                                "y": "18",
+                                "width": "18",
+                                "height": "34",
+                                "type": "do_ImageView",
+                                "source": "source://image/topbar@back.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "修改密码",
+                        "textAlign": "center"
+                    }
+                ]
+            },
+            {
+                "id": "do_alayout_4",
+                "y": "100",
+                "width": "670",
+                "height": "70",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "do_label_2",
+                        "x": "30",
+                        "y": "10",
+                        "width": "110",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontSize": "24",
+                        "text": "原密码"
+                    },
+                    {
+                        "id": "tf_old",
+                        "x": "140",
+                        "y": "10",
+                        "width": "330",
+                        "height": "50",
+                        "type": "do_TextField",
+                        "fontSize": "24",
+                        "hint": "请输入密码",
+                        "inputType": "ASC",
+                        "password": "true"
+                    }
+                ]
+            },
+            {
+                "id": "do_alayout_5",
+                "y": "170",
+                "width": "480",
+                "height": "70",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "do_label_3",
+                        "x": "30",
+                        "y": "10",
+                        "width": "110",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontSize": "24",
+                        "text": "新密码"
+                    },
+                    {
+                        "id": "tf_new",
+                        "x": "140",
+                        "y": "10",
+                        "width": "330",
+                        "height": "50",
+                        "type": "do_TextField",
+                        "fontSize": "24",
+                        "hint": "请输入新密码",
+                        "inputType": "ASC",
+                        "password": "true"
+                    }
+                ]
+            },
+            {
+                "id": "do_alayout_6",
+                "y": "240",
+                "width": "480",
+                "height": "70",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "do_label_4",
+                        "x": "30",
+                        "y": "10",
+                        "width": "110",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontSize": "24",
+                        "text": "确认密码"
+                    },
+                    {
+                        "id": "tf_again",
+                        "x": "140",
+                        "y": "10",
+                        "width": "330",
+                        "height": "50",
+                        "type": "do_TextField",
+                        "fontSize": "24",
+                        "hint": "请再次输入新密码",
+                        "inputType": "ASC",
+                        "password": "true"
+                    }
+                ]
+            },
+            {
+                "id": "action_ok",
+                "x": "50",
+                "y": "340",
+                "width": "380",
+                "height": "60",
+                "bgColor": "E03E3FFF",
+                "type": "do_Button",
+                "fontColor": "FFFFFFFF",
+                "fontSize": "24",
+                "text": "确认"
+            },
+            {
+                "id": "do_line_1",
+                "y": "100",
+                "width": "480",
+                "height": "1",
+                "bgColor": "DBDBDBFF",
+                "type": "do_Label"
+            },
+            {
+                "id": "do_line_2",
+                "x": "30",
+                "y": "170",
+                "width": "480",
+                "height": "1",
+                "bgColor": "DBDBDBFF",
+                "type": "do_Label"
+            },
+            {
+                "id": "do_line_3",
+                "x": "30",
+                "y": "240",
+                "width": "480",
+                "height": "1",
+                "bgColor": "DBDBDBFF",
+                "type": "do_Label"
+            },
+            {
+                "id": "do_line_4",
+                "y": "310",
+                "width": "480",
+                "height": "1",
+                "bgColor": "DBDBDBFF",
+                "type": "do_Label"
+            }
+        ]
+    }
+}

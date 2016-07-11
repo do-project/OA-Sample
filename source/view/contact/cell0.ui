@@ -1,0 +1,53 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "125",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "icon",
+                "x": "15",
+                "y": "27",
+                "width": "70",
+                "height": "70",
+                "type": "do_ImageView",
+                "cacheType": "temporary",
+                "defaultImage": "source://image/user@avatar.png",
+                "scale": "fillxory"
+            },
+            {
+                "id": "nameP",
+                "x": "99",
+                "y": "10",
+                "width": "370",
+                "height": "34",
+                "type": "do_Label",
+                "fontSize": "24",
+                "maxLines": "1"
+            },
+            {
+                "id": "itcodeP",
+                "x": "99",
+                "y": "50",
+                "width": "370",
+                "height": "30",
+                "type": "do_Label",
+                "fontColor": "666666FF",
+                "fontSize": "20",
+                "maxLines": "1"
+            },
+            {
+                "id": "departname",
+                "x": "99",
+                "y": "85",
+                "width": "370",
+                "height": "30",
+                "type": "do_Label",
+                "fontColor": "666666FF",
+                "fontSize": "20",
+                "maxLines": "1"
+            }
+        ]
+    }
+}

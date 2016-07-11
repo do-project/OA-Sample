@@ -1,0 +1,163 @@
+﻿{
+  "ID": "do_Audio",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "音频播放与录制",
+  "Version": "Internal",
+  "Description": "播放音频，能支持播放mp3、amr、aac格式的本地和网络音频，录制音频可支持mp3、amr、aac格式输出",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_Audio/audio.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "error",
+      "Description": "音频播放、录音错误时触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "playFinished",
+      "Description": "音频播放结束后触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "playProgress",
+      "Description": "",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回音频总时间和当前播放时间{currentTime,totalTime}"
+    },
+    {
+      "ID": "recordFinished",
+      "Description": "录音结束后触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "recordProgress",
+      "Description": "",
+      "ReturnType": "String",
+      "ReturnDesc": "返回录音总时间totalTime"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "pause",
+      "Name": "暂停播放",
+      "Description": "",
+      "ReturnType": "Number",
+      "ReturnDesc": "返回暂停时播放到第几毫秒",
+      "Paras": []
+    },
+    {
+      "ID": "play",
+      "Name": "开始播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "path",
+          "Name": "播放文件源路径",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "支持data://、source://和网络链接"
+        },
+        {
+          "ID": "point",
+          "Name": "播放起点",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "从最开始的第几毫秒"
+        }
+      ]
+    },
+    {
+      "ID": "resume",
+      "Name": "继续播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "startRecord",
+      "Name": "开始录音",
+      "Description": "",
+      "ReturnType": "Bool",
+      "ReturnDesc": "成功返回true，失败返回false",
+      "Paras": [
+        {
+          "ID": "path",
+          "Name": "保存路径",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "要保存的录音文件路径，支持数据区data://，指定到目录"
+        },
+        {
+          "ID": "type",
+          "Name": "录音输出格式",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "mp3",
+          "Description": "选择录音输出的格式，支持mp3、amr、aac格式"
+        },
+        {
+          "ID": "quality",
+          "Name": "录音输出质量",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "normal",
+          "Description": "选择录音输出的质量，支持high、normal、low"
+        },
+        {
+          "ID": "limit",
+          "Name": "录音时长限制",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "-1",
+          "Description": "录音的时长限制，以毫秒为单位，-1时表示不限制录音时长"
+        }
+      ]
+    },
+    {
+      "ID": "stop",
+      "Name": "停止播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "stopRecord",
+      "Name": "结束录音",
+      "Description": "",
+      "ReturnType": "String",
+      "ReturnDesc": "返回录音文件保存的目录及文件名",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}

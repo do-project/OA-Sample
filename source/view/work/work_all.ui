@@ -1,0 +1,23 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_listview_all",
+                "width": "480",
+                "height": "700",
+                "bgColor": "FFFFFFFF",
+                "type": "do_ListView",
+                "footerView": "source://view/kit/fbar.ui",
+                "headerView": "source://view/kit/hbar.ui",
+                "isFooterVisible": "true",
+                "isHeaderVisible": "true",
+                "templates": "source://view/work/cell0.ui,source://view/work/cell1.ui,source://view/work/cell2.ui,source://view/work/cell3.ui,source://view/work/cell4.ui"
+            }
+        ]
+    }
+}

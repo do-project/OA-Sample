@@ -1,0 +1,45 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "visible": "false",
+        "bgColor": "00000088",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_linearlayout_1",
+                "y": "714",
+                "width": "480",
+                "height": "141",
+                "bgColor": "FFFFFFFF",
+                "type": "do_LinearLayout",
+                "views": [
+                    {
+                        "id": "action_cap",
+                        "width": "480",
+                        "height": "70",
+                        "type": "do_Button",
+                        "fontSize": "24",
+                        "text": "拍照"
+                    },
+                    {
+                        "id": "do_line_1",
+                        "width": "480",
+                        "height": "1",
+                        "bgColor": "DBDBDBFF",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "action_abl",
+                        "width": "480",
+                        "height": "70",
+                        "type": "do_Button",
+                        "fontSize": "24",
+                        "text": "相册"
+                    }
+                ]
+            }
+        ]
+    }
+}

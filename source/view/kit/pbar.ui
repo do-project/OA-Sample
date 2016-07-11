@@ -1,0 +1,31 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "784",
+        "visible": "false",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "x": "180",
+                "y": "270",
+                "width": "120",
+                "height": "120",
+                "type": "do_ALayout",
+                "isStretch": "false",
+                "layoutAlign": "MiddleCenter",
+                "views": [
+                    {
+                        "id": "do_progressbar_1",
+                        "x": "30",
+                        "y": "30",
+                        "width": "60",
+                        "height": "60",
+                        "type": "do_ProgressBar"
+                    }
+                ]
+            }
+        ]
+    }
+}

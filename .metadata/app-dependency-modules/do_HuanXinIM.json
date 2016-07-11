@@ -1,0 +1,144 @@
+﻿{
+  "ID": "do_HuanXinIM",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "环信IM",
+  "Version": "Internal",
+  "Description": "环信即时通讯IM",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/7a48cbdb-fa4a-4890-83ed-8e679d8df583.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "16"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "chatStatusChanged",
+      "Description": "聊天状态改变",
+      "ReturnType": "Number",
+      "ReturnDesc": "1 : 已进入聊天状态; 0 : 未进入聊天状态"
+    },
+    {
+      "ID": "connection",
+      "Description": "监听连接状态",
+      "ReturnType": "String",
+      "ReturnDesc": "state:'1 显示帐号已经被移除 | 2 显示帐号在其他设备登陆 | 3 连接不到聊天服务器  | 4 当前网络不可用 请检查网络设置 "
+    },
+    {
+      "ID": "receive",
+      "Description": "接收到新消息触发事件",
+      "ReturnType": "Node",
+      "ReturnDesc": "{ from : '会话用户ID', nick : '会话用户昵称', icon:'会话用户头像', message : '会话消息内容', time : '消息发送时间' , type : '消息类型', tag : '自定义文本'  }"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "enterChat",
+      "Name": "进入聊天",
+      "Description": "进入与指定用户发起聊天",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "userID",
+          "Name": "会话用户名",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "会话用户的ID"
+        },
+        {
+          "ID": "userNick",
+          "Name": "会话用户昵称",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "会话用户昵称"
+        },
+        {
+          "ID": "userIcon",
+          "Name": "用户头像",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "仅支持网络图片"
+        },
+        {
+          "ID": "selfNick",
+          "Name": "会话本地用户昵称",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "仅支持网络图片"
+        },
+        {
+          "ID": "selfIcon",
+          "Name": "会话本地用户头像",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "仅支持网络图片"
+        },
+        {
+          "ID": "tag",
+          "Name": "自定义数据",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "可随消息发送到消息接受者receive监听中"
+        }
+      ]
+    },
+    {
+      "ID": "logout",
+      "Name": "注销用户",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": [
+    {
+      "ID": "login",
+      "Name": "IM用户登录",
+      "Description": "使用用户名、密码登录，需先使用环信账户创建一个应用，然后在该应用下创建或通过接口注册IM用户",
+      "ReturnType": "Node",
+      "ReturnDesc": "登录是否成功，{state:' 0 成功 | 1 失败 ',message:' 回执信息 '}",
+      "Paras": [
+        {
+          "ID": "username",
+          "Name": "用户名",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "password",
+          "Name": "密码",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+﻿{
+  "ID": "do_GridView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "Grid视图",
+  "Version": "Internal",
+  "Description": "GridView是一个二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_GridView/Gridview视图.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "canScrollToTop",
+      "Name": "是否滚动到屏幕顶部",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "0",
+      "Group": "UI",
+      "Description": "属性设置成true时可以通过点击手机状态栏返回内容的顶部；仅支持iOS平台",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "hSpacing",
+      "Name": "两列之间的间距",
+      "Type": "Number",
+      "DefaultValue": "无",
+      "EditType": "0",
+      "Group": "",
+      "Description": "两列之间的间距，单位为px",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "isShowbar",
+      "Name": "是否支持显示滚动条效果",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "0",
+      "Group": "",
+      "Description": "为true的时候，当数据内容超出gridview的边界，会出现滚动条标识",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "numColumns",
+      "Name": "GridView对应的列数",
+      "Type": "Number",
+      "DefaultValue": "无",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置这个GridView显示多少列，-1 表示自动适应，iOS不支持（通过cell的宽度和屏幕宽度自动计算列数）",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "selectedColor",
+      "Name": "cell选中的背景颜色",
+      "Type": "String",
+      "DefaultValue": "无",
+      "EditType": "0",
+      "Group": "",
+      "Description": "无",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "templates",
+      "Name": "显示视图对应UI模板文件",
+      "Type": "Node",
+      "DefaultValue": "无",
+      "EditType": "0",
+      "Group": "",
+      "Description": "一个GridView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件，这些ui文件没有自己的逻辑代码，和gridview所在的page共用一个脚本环境。\r\n这个属性的格式类似如下：\r\n[\"source://view/cell1.ui\",\"source://view/cell2.ui\",\"source://view/cell3.ui]；多模版的大小需要一致",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    },
+    {
+      "ID": "vSpacing",
+      "Name": "两行之间的间距",
+      "Type": "Number",
+      "DefaultValue": "无",
+      "EditType": "0",
+      "Group": "",
+      "Description": "两行之间的间距，单位为px",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "longTouch",
+      "Description": "长按cell触发",
+      "ReturnType": "String",
+      "ReturnDesc": "当前cell的position值"
+    },
+    {
+      "ID": "touch",
+      "Description": "点击cell触发",
+      "ReturnType": "String",
+      "ReturnDesc": "当前cell的position值"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "bindItems",
+      "Name": "绑定item的数据",
+      "Description": "可绑定listData实例",
+      "ReturnType": "",
+      "ReturnDesc": "无",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "数据",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "refreshItems",
+      "Name": "刷新item数据",
+      "Description": "无",
+      "ReturnType": "",
+      "ReturnDesc": "无",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}

@@ -1,0 +1,120 @@
+﻿{
+  "ID": "do_IndexListView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "带索引的ListView",
+  "Version": "Internal",
+  "Description": "IndexListView实际上是一个界面右边带索引的ListView，可以绑定一个HashData数据源，按下滑动右边的索引，可以快速定位到该索引下的首条数据，主要应用于通讯录，歌曲播放器等界面",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_IndexListView/索引列表indexlist.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "indexBarColors",
+      "Name": "索引颜色",
+      "Type": "String",
+      "DefaultValue": "00000000,C0C0C0,000000,00000000",
+      "EditType": "0",
+      "Group": "",
+      "Description": "包含四个颜色，分别是索引列表背景色、按下索引背景色、索引文本颜色、滑块颜色，中间用逗号隔开，仅android平台支持",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    },
+    {
+      "ID": "selectedColor",
+      "Name": "Cell选中的背景颜色",
+      "Type": "String",
+      "DefaultValue": "ffffff00",
+      "EditType": "0",
+      "Group": "",
+      "Description": "设置IndexListView 的按下选择颜色，如果在模板中设置rootLayout背景颜色，将不起作用",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "templates",
+      "Name": "Cell对应的模板UI文件组",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "一个IndexListView可以有多个cell模板，这个属性包含多个source://开头的ui文件，中间用逗号隔开，格式类似如下：“source://view/cell1.ui,source://view/cell2.ui,source://view/cell3.ui”",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "longTouch",
+      "Description": "长按cell触发",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']"
+    },
+    {
+      "ID": "touch",
+      "Description": "点击cell触发",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回data中的groupID和group下的数据index，比如['groupID':'A','index':'2']"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "bindItems",
+      "Name": "绑定item的数据",
+      "Description": "为IndeListView绑定数据源，只支持HashData实例，其中每组第一条数据表示分组信息，不可点击",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "数据",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "比如{'A':[{'template':0,'text':'a1'},{'template':1,'text':'a2'}],'B':[{'template':0,'text':'b1'},{'template':1,'text':'b2'}]}，其中每个group下第一条数据表示分组信息，不可点击"
+        },
+        {
+          "ID": "indexs",
+          "Name": "索引的数组",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "一个数组列表，按照此列表显示列表数据，可以为空，为空就按照HashData‘随机’显示列表数据"
+        }
+      ]
+    },
+    {
+      "ID": "refreshItems",
+      "Name": "刷新item数据",
+      "Description": "动态修改HashData数据源后，需要调用此方法才能正确显示数据",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}

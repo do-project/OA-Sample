@@ -1,0 +1,82 @@
+{
+    "RootView": {
+        "id": "do_alayout_1",
+        "width": "480",
+        "height": "854",
+        "bgColor": "F7F7F7FF",
+        "type": "do_ALayout",
+        "views": [
+            {
+                "id": "do_alayout_2",
+                "width": "480",
+                "height": "70",
+                "bgColor": "E03E3FFF",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "label_title",
+                        "x": "100",
+                        "y": "10",
+                        "width": "280",
+                        "height": "50",
+                        "type": "do_Label",
+                        "fontColor": "FFFFFFFF",
+                        "fontSize": "30",
+                        "text": "应用+",
+                        "textAlign": "center"
+                    },
+                    {
+                        "id": "action_refresh",
+                        "x": "400",
+                        "width": "80",
+                        "height": "70",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_2",
+                                "x": "20",
+                                "y": "15",
+                                "width": "40",
+                                "height": "40",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/apps@refresh.png"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "action_ok",
+                        "x": "400",
+                        "width": "80",
+                        "height": "70",
+                        "visible": "false",
+                        "bgColor": "E03E3FFF",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "do_imageview_1",
+                                "x": "20",
+                                "y": "21",
+                                "width": "41",
+                                "height": "28",
+                                "type": "do_ImageView",
+                                "scale": "fillxory",
+                                "source": "source://image/feedback@send.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "do_gridview",
+                "y": "70",
+                "width": "480",
+                "height": "700",
+                "bgColor": "FFFFFFFF",
+                "type": "do_GridView",
+                "numColumns": "3",
+                "templates": "source://view/apps/cell0.ui,source://view/apps/cell1.ui,source://view/apps/cell2.ui"
+            }
+        ]
+    }
+}

@@ -1,0 +1,102 @@
+﻿{
+  "ID": "do_VideoView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "视频播放器",
+  "Version": "Internal",
+  "Description": "一个简单的播放视频的UI组件，能支持播放本地和网络视频，可支持mp4格式，可以通过点击全屏按钮切换到全屏播放",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_VideoView/video.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "path",
+      "Name": "播放文件源路径",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "支持data://、source://和网络地址",
+      "Design": {
+        "Type": "FileSource",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "error",
+      "Description": "视频播放异常时触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "finished",
+      "Description": "视频播放完后触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "pause",
+      "Name": "暂停播放",
+      "Description": "",
+      "ReturnType": "Number",
+      "ReturnDesc": "返回当前视频暂停时的位置，毫秒值",
+      "Paras": []
+    },
+    {
+      "ID": "play",
+      "Name": "开始播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "point",
+          "Name": "播放起点",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "从视频中的某一点开始播放，毫秒值"
+        }
+      ]
+    },
+    {
+      "ID": "resume",
+      "Name": "继续播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "stop",
+      "Name": "停止播放",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}

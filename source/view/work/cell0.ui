@@ -1,0 +1,110 @@
+{
+    "RootView": {
+        "id": "do_linearlayout_1",
+        "width": "480",
+        "height": "-1",
+        "type": "do_LinearLayout",
+        "direction": "horizontal",
+        "views": [
+            {
+                "id": "do_alayout_1",
+                "height": "100",
+                "type": "do_ALayout",
+                "views": [
+                    {
+                        "id": "icon",
+                        "x": "15",
+                        "y": "15",
+                        "width": "70",
+                        "height": "70",
+                        "type": "do_ImageView",
+                        "cacheType": "temporary",
+                        "defaultImage": "source://image/user@avatar.png",
+                        "enabled": "true",
+                        "scale": "fillxory"
+                    }
+                ]
+            },
+            {
+                "id": "do_linearlayout_2",
+                "width": "380",
+                "height": "-1",
+                "type": "do_LinearLayout",
+                "views": [
+                    {
+                        "id": "do_label_1",
+                        "width": "380",
+                        "height": "15",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "name",
+                        "width": "365",
+                        "height": "-1",
+                        "type": "do_Label",
+                        "fontSize": "24"
+                    },
+                    {
+                        "id": "do_label_2",
+                        "width": "380",
+                        "height": "5",
+                        "type": "do_Label"
+                    },
+                    {
+                        "id": "message",
+                        "width": "365",
+                        "height": "-1",
+                        "type": "do_Label",
+                        "fontColor": "333333FF",
+                        "fontSize": "22"
+                    },
+                    {
+                        "id": "do_alayout_2",
+                        "width": "380",
+                        "height": "50",
+                        "type": "do_ALayout",
+                        "views": [
+                            {
+                                "id": "createTime",
+                                "y": "10",
+                                "width": "240",
+                                "height": "30",
+                                "type": "do_Label",
+                                "fontColor": "999999FF",
+                                "fontSize": "20"
+                            },
+                            {
+                                "id": "actionTips",
+                                "x": "310",
+                                "width": "70",
+                                "height": "50",
+                                "type": "do_ALayout",
+                                "views": [
+                                    {
+                                        "id": "imgTips",
+                                        "x": "20",
+                                        "y": "11",
+                                        "width": "30",
+                                        "height": "28",
+                                        "type": "do_ImageView",
+                                        "scale": "fillxory",
+                                        "source": "source://image/work@comment.png"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "commentList",
+                        "width": "365",
+                        "height": "-1",
+                        "margin": "0,0,15,0",
+                        "type": "do_Label",
+                        "fontColor": "333333FF",
+                        "fontSize": "22"
+                    }
+                ]
+            }
+        ]
+    }
+}
